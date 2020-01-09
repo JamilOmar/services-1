@@ -6,7 +6,7 @@ exports.usage = [
     ''
 ];
 exports.start = async function () {
-    this.log.info('Starting LabShare services...');
+    this.log.info('Starting LabShare services with LoopBack ...');
     const lbApp = new app.LabShareApplication(LabShare.Config);
     global.LabShare.App = lbApp;
     await lbApp.setMiddleware();    
